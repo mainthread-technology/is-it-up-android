@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App Strings -->
+    <string name="app_name">Is It Up?</string>
+
+    <!-- HomeFragment -->
+    <string name="up_button_text">up?</string>
+    <string name="txt_is">is</string>
+    <string name="default_site">isitup.org</string>
+
+    <!-- Navigation Drawer -->
+    <string name="title_home">Home</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_result">Result</string>
+    <string name="title_settings">Settings</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- ResultFragment -->
+    <string name="menu_item_share">Share</string>
+    <string name="status_up">is up</string>
+    <string name="status_down">is down</string>
+    <string name="status_invalid_domain">We need a valid domain to check!</string>
+    <string name="status_error">Woops something went wrong</string>
+    <string name="result_detail">It took %1$dms for a %2$d response code</string>
+    <string name="result_last_checked">Last checked %s</string>
+    <string name="share_message_up">Yay, %1$s is up. https://isitup.org/%1$s #isitup</string>
+    <string name="share_message_down">Oh no! %1$s is down. https://isitup.org/%1$s #isitup</string>
+    <string name="share_message_default">I\'m using https://isitup.org #isitup</string>
+    <string name="delete">delete</string>
+    <string name="save">save</string>
+    <string name="button_visit">visit</string>
+    <string name="error_network_message">Can\'t connect</string>
+    <string name="error_network_detail">It must be you</string>
+    <string name="error_http_message">Service problem</string>
+    <string name="error_http_detail">Well that is embarrassing</string>
+    <string name="error_unknown_message">Unknown problem</string>
+    <string name="error_unknown_detail">We will fix this right away</string>
+
+   <!-- Favourites Fragment -->
+
+   <!-- Notifications -->
+    <string name="notification_single_site_down">Oh no %s is down</string>
+    <string name="notification_multiple_sites_down">Oh no %d of your favorites are down</string>
+    <string name="notification_content">Tap for more information</string>
+    <string name="dashclock_expanded_text">These sites are down:\n</string>
+    <string name="dashclock_status_down">Down</string>
+    <string name="intent_uri_favorites">isitup://favourites</string>
+    <string name="intent_uri_check">isitup://check/%s</string>
+
+    <!-- Settings Fragment -->
+        <!-- Notifications -->
+        <string name="group_title_notifications">Notifications</string>
+        <string name="key_checker_frequency">background_checker_frequency</string>
+        <string name="title_checker_frequency">Background Checking</string>
+        <string name="default_checker_frequency">6</string>
+        <string name="key_notifications">notifications_enabled</string>
+        <string name="title_notifications">Notifications</string>
+        <string name="summary_notifications">Notify me when a site is down</string>
+        <string name="key_sound_vibrate">notification_sound_vibrate</string>
+        <string name="title_sound_vibrations">Sounds &amp; Vibrations</string>
+        <string name="summary_sound_vibrations">Make a sound and vibrate when I get a notification</string>
+
+        <!-- Analytics -->
+        <string name="group_title_analytics">Privacy</string>
+        <string name="key_analytics">key_analytics</string>
+        <string name="title_analytics">Share statistics</string>
+        <string name="summary_analytics">Main Thread Technology will only use this info to analyse and improve the services offered though this app. For more details see our Privacy policy.</string>
+
+        <!-- DashClock -->
+        <string name="group_title_dashclock">DashClock</string>
+        <string name="key_dashclock">dashclock_preference</string>
+        <string name="title_dashclock">Setup DashClock</string>
+        <string name="summary_dashclock">Click to configure or install DashClock</string>
+
+        <!-- Developer -->
+        <string name="group_title_developer">Developer</string>
+        <string name="title_contact_dev">Contact developer</string>
+        <string name="contact_us_subject">Is it up? Feedback</string>
+        <string name="title_other_apps">Other apps</string>
+        <string name="title_privacy">Privacy policy</string>
+        <string name="dash_clock_package_name">net.nurik.roman.dashclock</string>
+        <string name="dash_clock_config_activity">com.google.android.apps.dashclock.configuration.ConfigurationActivity</string>
+        <string name="key_os_licences">key_os_licences</string>
+        <string name="title_os_licences">Open source licences</string>
+        <string name="key_version">key_version</string>
+        <string name="title_version">Version</string>
+        <string name="version_name_error">Cannot find version</string>
+    <!-- /Settings Fragment -->
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/group_title_notifications">
+
+        <ListPreference
+            android:key="@string/key_checker_frequency"
+            android:title="@string/title_checker_frequency"
+            android:summary="%s"
+            android:entries="@array/checker_frequency_entries"
+            android:entryValues="@array/checker_frequency_values"
+            android:defaultValue="@string/default_checker_frequency"/>
+
+        <CheckBoxPreference
+            android:key="@string/key_notifications"
+            android:title="@string/title_notifications"
+            android:summary="@string/summary_notifications"
+            android:defaultValue="true"/>
+
+        <CheckBoxPreference
+            android:key="@string/key_sound_vibrate"
+            android:dependency="@string/key_notifications"
+            android:layout="?android:attr/preferenceLayoutChild"
+            android:title="@string/title_sound_vibrations"
+            android:summary="@string/summary_sound_vibrations"
+            android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/group_title_analytics">
+
+        <CheckBoxPreference
+            android:key="@string/key_analytics"
+            android:title="@string/title_analytics"
+            android:summary="@string/summary_analytics"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/group_title_dashclock">
+
+        <PreferenceScreen
+            android:key="@string/key_dashclock"
+            android:title="@string/title_dashclock"
+            android:summary="@string/summary_dashclock">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="market://details?id=net.nurik.roman.dashclock" />
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/group_title_developer">
+
+        <PreferenceScreen android:title="@string/title_contact_dev">
+            <intent android:action="android.intent.action.SENDTO"
+                android:data="mailto:hello@mainthread.technology" >
+                <extra
+                    android:name="android.intent.extra.SUBJECT"
+                    android:value="@string/contact_us_subject" />
+                </intent>
+        </PreferenceScreen>
+
+        <PreferenceScreen android:title="@string/title_other_apps">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="market://search?q=pub:MainThread+Technology" />
+        </PreferenceScreen>
+
+        <PreferenceScreen android:title="@string/title_privacy">
+            <intent android:action="android.intent.action.VIEW"
+                android:data="https://mainthread.technology/apps/isitup/privacy.html" />
+        </PreferenceScreen>
+
+        <Preference
+            android:key="@string/key_os_licences"
+            android:title="@string/title_os_licences"/>
+
+        <Preference
+            android:key="@string/key_version"
+            android:title="@string/title_version"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

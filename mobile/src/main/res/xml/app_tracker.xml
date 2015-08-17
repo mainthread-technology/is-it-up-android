@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="TypographyDashes,UnusedResources">
+
+    <integer name="ga_sessionTimeout">300</integer>
+    <bool name="ga_reportUncaughtExceptions">false</bool>
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <screenName name="technology.mainthread.apps.isitup.ui.fragment.HomeFragment">
+        IsItUp HomeScreen
+    </screenName>
+    <screenName name="technology.mainthread.apps.isitup.ui.fragment.FavouritesFragment">
+        IsItUp FavouritesScreen
+    </screenName>
+    <screenName name="technology.mainthread.apps.isitup.ui.fragment.ResultFragment">
+        IsItUp ResultScreen
+    </screenName>
+    <screenName name="technology.mainthread.apps.isitup.ui.activity.SettingsActivity">
+        IsItUp SettingsScreen
+    </screenName>
+
+    <string name="ga_trackingId">ANALYTICS-ID</string>
+
+</resources>
