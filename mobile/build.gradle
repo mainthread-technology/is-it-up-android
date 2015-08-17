@@ -5,6 +5,7 @@ apply plugin: 'com.neenbedankt.android-apt'
 android {
     compileSdkVersion compileAndTargetSdkLevel
     buildToolsVersion buildTools
+    useLibrary 'org.apache.http.legacy' // TODO: remove - google play services needs this
 
     defaultConfig {
         minSdkVersion minSdkLevel
