@@ -57,7 +57,7 @@ subprojects {
         compileAndTargetSdkLevel = 23
         minSdkLevel = 15
         commonPlayServicesVersion = '7.8.0'
-        commonSupportLibraryVersion = '22.2.1'
+        commonSupportLibraryVersion = '23.0.0'
         daggerVersion = '2.0.1'
     }
 }
