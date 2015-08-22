@@ -1,7 +1,6 @@
 # Retrofit, OkHttp, Gson
 -keepattributes *Annotation*
 -keepattributes Signature
--dontwarn rx.**
 
 -dontwarn okio.**
 -dontwarn com.squareup.okhttp.**
@@ -38,8 +37,9 @@
     @butterknife.* <methods>;
 }
 
-# RxAndroid
--dontwarn rx.internal.util.**
+# RxJava
+-dontwarn rx.**
+-keep class rx.internal.util.** { *; }
 
 # Google Play Services
 -keep class * extends java.util.ListResourceBundle {
