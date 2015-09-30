@@ -64,8 +64,9 @@ dependencies {
     compile 'com.trello:rxlifecycle-components:0.3.0'
 
     // Google Android Libraries
-    compile "com.google.android.gms:play-services-base:${commonPlayServicesVersion}"
-    compile "com.google.android.gms:play-services-analytics:${commonPlayServicesVersion}"
+    compile ("com.google.android.gms:play-services-analytics:${commonPlayServicesVersion}") {
+        exclude module: 'play-services-ads'
+    }
 
     compile "com.android.support:appcompat-v7:${commonSupportLibraryVersion}"
     compile "com.android.support:recyclerview-v7:${commonSupportLibraryVersion}"
