@@ -13,7 +13,6 @@ public class IsItUpDbHelper extends SQLiteOpenHelper {
 
     private final Context mContext;
 
-
     public IsItUpDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         mContext = context;

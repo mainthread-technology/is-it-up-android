@@ -78,7 +78,7 @@ public class SettingsFragment extends PreferenceFragment implements Preference.O
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference.getKey().equals(getString(R.string.key_checker_frequency))) {
-            boolean enabled = !newValue.equals("0");
+            boolean enabled = !"0".equals(newValue);
             findPreference(getString(R.string.key_notifications)).setEnabled(enabled);
         }
         return true;

@@ -54,12 +54,13 @@ public class IsItUpDashClockService extends DashClockExtension {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        if (srChangeReceiver != null)
+        if (srChangeReceiver != null) {
             try {
                 LocalBroadcastManager.getInstance(this).unregisterReceiver(srChangeReceiver);
             } catch (Exception e) {
                 e.printStackTrace();
             }
+        }
     }
 
     @Override
@@ -106,7 +107,6 @@ public class IsItUpDashClockService extends DashClockExtension {
                             Uri.parse(getString(R.string.intent_uri_favorites)))));
         }
     }
-
 
     private String getExpandedBodyText(List<IsItUpInfo> isItUpInfos) {
         StringBuilder out = new StringBuilder();

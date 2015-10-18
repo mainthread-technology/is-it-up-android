@@ -16,7 +16,6 @@ import timber.log.Timber;
 
 import static technology.mainthread.apps.isitup.background.receiver.JitterAlarmReceiver.getJitterAlarmReceiverIntent;
 
-
 public class AlarmReceiver extends BroadcastReceiver {
 
     @Inject
@@ -35,7 +34,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 
         int relativeTime = new Random().nextInt(MAX_JITTER_MILLIS);
         long time = SystemClock.elapsedRealtime() + relativeTime;
-        Timber.d("Jitter receiver will be fired in: %d seconds", (relativeTime / 1000));
+        Timber.d("Jitter receiver will be fired in: %d seconds", relativeTime / 1000);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, getJitterAlarmReceiverIntent(context), PendingIntent.FLAG_UPDATE_CURRENT);
         alarmManager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, time, pendingIntent);
     }

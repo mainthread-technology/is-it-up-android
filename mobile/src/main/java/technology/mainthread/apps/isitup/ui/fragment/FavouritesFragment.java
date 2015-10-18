@@ -76,8 +76,6 @@ public class FavouritesFragment extends BaseFragment implements SwipeRefreshLayo
                 }
                 Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
             }
-
-
         }
 
         @Override

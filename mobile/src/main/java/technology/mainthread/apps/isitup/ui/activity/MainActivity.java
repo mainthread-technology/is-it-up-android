@@ -56,18 +56,18 @@ public class MainActivity extends BaseActivity implements NavigationDrawerListen
 
             String domain = null;
             if (uri != null) {
-                if (uri.getScheme().startsWith("http")) {
+                if ("http".equals(uri.getScheme())) {
                     List<String> pathSegments = uri.getPathSegments();
                     if (pathSegments != null && !pathSegments.isEmpty()) {
                         domain = pathSegments.get(0);
                     }
-                } else if (uri.getScheme().equals("isitup")) {
-                    if (uri.getHost().equals("check")) {
+                } else if ("isitup".equals(uri.getScheme())) {
+                    if ("check".equals(uri.getHost())) {
                         List<String> pathSegments = uri.getPathSegments();
                         if (pathSegments != null && !pathSegments.isEmpty()) {
                             domain = pathSegments.get(0);
                         }
-                    } else if (uri.getHost().equals("favourites")) {
+                    } else if ("favourites".equals(uri.getHost())) {
                         showFragment(FavouritesFragment.newInstance());
                         handled = true;
                     }
@@ -97,6 +97,8 @@ public class MainActivity extends BaseActivity implements NavigationDrawerListen
                 break;
             case R.id.nav_settings:
                 startActivity(SettingsActivity.getSettingsActivityIntent(this));
+                break;
+            default:
                 break;
         }
     }

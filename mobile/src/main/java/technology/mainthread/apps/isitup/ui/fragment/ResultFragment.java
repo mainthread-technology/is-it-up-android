@@ -311,6 +311,8 @@ public class ResultFragment extends BaseFragment implements SwipeRefreshLayout.O
                 case DOWN:
                     message = getString(R.string.share_message_down, response.getDomain());
                     break;
+                default:
+                    break;
             }
         }
         return message;

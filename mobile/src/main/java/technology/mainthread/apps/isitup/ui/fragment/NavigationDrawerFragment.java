@@ -18,7 +18,6 @@ import technology.mainthread.apps.isitup.ui.listeners.ToolbarProvider;
 
 public class NavigationDrawerFragment extends BaseFragment {
 
-
     private NavigationDrawerListener drawerListener = NavigationDrawerListener.NO_OP;
     private ActionBarDrawerToggle mDrawerToggle;
     private ToolbarProvider toolbarProvider;

@@ -67,7 +67,9 @@ public class FavouritesChecker {
                         .build());
 
                 for (final IsItUpInfo favourite : allFavourites) {
-                    if (subscriber.isUnsubscribed()) break;
+                    if (subscriber.isUnsubscribed()) {
+                        break;
+                    }
                     Timber.d("Checking favourite %s", favourite.getDomain());
                     IsItUpInfo info = request.checkSite(favourite.getDomain());
                     if (info != null) {

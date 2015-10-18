@@ -40,9 +40,9 @@ public class NetworkModule {
         RestAdapter restAdapter = new RestAdapter.Builder()
                 .setClient(new OkClient(okHttpClient))
                 .setEndpoint(resources.getString(R.string.endpoint))
-                .setLogLevel(BuildConfig.DEBUG ?
-                        RestAdapter.LogLevel.FULL :
-                        RestAdapter.LogLevel.NONE)
+                .setLogLevel(BuildConfig.DEBUG
+                        ? RestAdapter.LogLevel.FULL
+                        : RestAdapter.LogLevel.NONE)
                 .build();
 
         return restAdapter.create(IsItUpRequest.class);

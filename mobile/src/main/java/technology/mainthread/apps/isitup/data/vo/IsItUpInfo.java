@@ -66,21 +66,8 @@ public class IsItUpInfo {
         lastChecked = builder.lastChecked;
     }
 
-    public static Builder Builder() {
+    public static Builder builder() {
         return new Builder();
-    }
-
-    public static Builder Builder(IsItUpInfo copy) {
-        Builder builder = new Builder();
-        builder.id = copy.id;
-        builder.domain = copy.domain;
-        builder.port = copy.port;
-        builder.statusCode = copy.statusCode;
-        builder.responseIp = copy.responseIp;
-        builder.responseCode = copy.responseCode;
-        builder.responseTime = copy.responseTime;
-        builder.lastChecked = copy.lastChecked;
-        return builder;
     }
 
     public static final class Builder {

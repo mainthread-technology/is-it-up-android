@@ -212,7 +212,7 @@ public class SyncFavouritesTable implements FavouritesTable {
     }
 
     private IsItUpInfo fromCursor(Cursor cursor) {
-        return IsItUpInfo.Builder()
+        return IsItUpInfo.builder()
                 .id(cursor.getInt(0))
                 .domain(cursor.getString(1))
                 .port(cursor.getInt(2))
