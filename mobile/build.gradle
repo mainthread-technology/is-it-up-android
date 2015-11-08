@@ -58,22 +58,20 @@ dependencies {
     provided 'org.glassfish:javax.annotation:10.0-b28'
 
     // RxJava
-    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxjava:1.0.15'
     compile 'io.reactivex:rxandroid:1.0.1'
     compile 'com.trello:rxlifecycle:0.3.0'
     compile 'com.trello:rxlifecycle-components:0.3.0'
 
     // Google Android Libraries
-    compile ("com.google.android.gms:play-services-analytics:${commonPlayServicesVersion}") {
-        exclude module: 'play-services-ads'
-    }
+    compile "com.google.android.gms:play-services-analytics:${commonPlayServicesVersion}"
 
     compile "com.android.support:appcompat-v7:${commonSupportLibraryVersion}"
     compile "com.android.support:recyclerview-v7:${commonSupportLibraryVersion}"
     compile "com.android.support:design:${commonSupportLibraryVersion}"
 
     // Logging
-    compile 'com.jakewharton.timber:timber:3.1.0'
+    compile 'com.jakewharton.timber:timber:4.1.0'
     // View binding
     compile 'com.jakewharton:butterknife:7.0.1'
 
