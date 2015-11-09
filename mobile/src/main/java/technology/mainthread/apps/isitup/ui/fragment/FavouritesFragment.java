@@ -70,7 +70,7 @@ public class FavouritesFragment extends BaseFragment implements SwipeRefreshLayo
                         message = R.string.error_http_message;
                         break;
                     default:
-                        Timber.e("Unknown retrofit error", e);
+                        Timber.e(e, "Unknown retrofit error");
                         message = R.string.error_unknown_message;
                         break;
                 }

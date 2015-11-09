@@ -100,7 +100,7 @@ public class ResultFragment extends BaseFragment implements SwipeRefreshLayout.O
                         showError(R.string.error_http_message, R.string.error_http_detail);
                         break;
                     default:
-                        Timber.e("Unknown retrofit error", e);
+                        Timber.e(e, "Unknown retrofit error");
                         showError(R.string.error_unknown_message, R.string.error_unknown_detail);
                         break;
                 }

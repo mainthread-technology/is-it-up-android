@@ -69,7 +69,7 @@ public class CheckerIntentService extends IntentService {
                 }
             } catch (Exception e) {
                 success = false;
-                Timber.w("Failed to update %s", favourite.getDomain(), e);
+                Timber.w(e, "Failed to update %s", favourite.getDomain());
             }
         }
         Timber.d("Checking complete");
