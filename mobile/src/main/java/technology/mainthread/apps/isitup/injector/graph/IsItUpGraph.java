@@ -1,5 +1,6 @@
-package technology.mainthread.apps.isitup;
+package technology.mainthread.apps.isitup.injector.graph;
 
+import technology.mainthread.apps.isitup.IsItUpApp;
 import technology.mainthread.apps.isitup.background.receiver.AlarmReceiver;
 import technology.mainthread.apps.isitup.background.receiver.BootReceiver;
 import technology.mainthread.apps.isitup.background.service.CheckerIntentService;

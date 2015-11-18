@@ -1,4 +1,4 @@
-package technology.mainthread.apps.isitup;
+package technology.mainthread.apps.isitup.injector.module;
 
 import android.app.AlarmManager;
 import android.app.Service;
@@ -14,6 +14,7 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
+import technology.mainthread.apps.isitup.IsItUpApp;
 
 @Module
 public class IsItUpAppModule {
@@ -27,7 +28,7 @@ public class IsItUpAppModule {
     @Provides
     @Singleton
     Context provideApplicationContext() {
-        return application;
+        return application.getApplicationContext();
     }
 
     @Provides

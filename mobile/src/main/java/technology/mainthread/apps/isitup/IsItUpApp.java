@@ -20,6 +20,7 @@ import io.fabric.sdk.android.Fabric;
 import technology.mainthread.apps.isitup.background.receiver.CheckerAlarmManager;
 import technology.mainthread.apps.isitup.data.CrashlyticsTree;
 import technology.mainthread.apps.isitup.data.StethoUtil;
+import technology.mainthread.apps.isitup.injector.component.AppComponent;
 import timber.log.Timber;
 
 public class IsItUpApp extends Application {
@@ -33,13 +34,13 @@ public class IsItUpApp extends Application {
 
     private HashMap<TrackerName, Tracker> mTrackers = new HashMap<>();
 
-    private IsItUpComponent component;
+    private AppComponent component;
     private RefWatcher refWatcher;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        component = IsItUpComponent.Initializer.init(this);
+        component = AppComponent.Initializer.init(this);
         component.inject(this);
 
         refWatcher = LeakCanary.install(this);
@@ -92,7 +93,7 @@ public class IsItUpApp extends Application {
         return mTrackers.get(TrackerName.APP_TRACKER);
     }
 
-    public static IsItUpComponent get(Context context) {
+    public static AppComponent get(Context context) {
         return ((IsItUpApp) context.getApplicationContext()).component;
     }
 

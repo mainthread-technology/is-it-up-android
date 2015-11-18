@@ -1,4 +1,4 @@
-package technology.mainthread.apps.isitup.data.network;
+package technology.mainthread.apps.isitup.injector.module;
 
 import android.content.res.Resources;
 
@@ -13,6 +13,7 @@ import retrofit.client.OkClient;
 import technology.mainthread.apps.isitup.BuildConfig;
 import technology.mainthread.apps.isitup.R;
 import technology.mainthread.apps.isitup.data.StethoUtil;
+import technology.mainthread.apps.isitup.data.network.IsItUpRequest;
 
 @Module
 public class NetworkModule {

@@ -1,4 +1,4 @@
-package technology.mainthread.apps.isitup.data.db;
+package technology.mainthread.apps.isitup.injector.module;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -7,6 +7,12 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
+import technology.mainthread.apps.isitup.data.db.AsyncFavourites;
+import technology.mainthread.apps.isitup.data.db.AsyncFavouritesTable;
+import technology.mainthread.apps.isitup.data.db.FavouritesTable;
+import technology.mainthread.apps.isitup.data.db.IsItUpDbHelper;
+import technology.mainthread.apps.isitup.data.db.SyncFavourites;
+import technology.mainthread.apps.isitup.data.db.SyncFavouritesTable;
 
 @Module
 public class DatabaseModule {
