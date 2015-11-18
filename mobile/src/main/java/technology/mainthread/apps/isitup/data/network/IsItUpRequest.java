@@ -4,7 +4,7 @@ import retrofit.http.GET;
 import retrofit.http.Headers;
 import retrofit.http.Path;
 import rx.Observable;
-import technology.mainthread.apps.isitup.data.vo.IsItUpInfo;
+import technology.mainthread.apps.isitup.model.IsItUpInfo;
 
 public interface IsItUpRequest {
 

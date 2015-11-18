@@ -6,16 +6,16 @@
     <bool name="ga_reportUncaughtExceptions">false</bool>
     <bool name="ga_autoActivityTracking">true</bool>
 
-    <screenName name="technology.mainthread.apps.isitup.ui.fragment.HomeFragment">
+    <screenName name="technology.mainthread.apps.isitup.view.fragment.HomeFragment">
         IsItUp HomeScreen
     </screenName>
-    <screenName name="technology.mainthread.apps.isitup.ui.fragment.FavouritesFragment">
+    <screenName name="technology.mainthread.apps.isitup.view.fragment.FavouritesFragment">
         IsItUp FavouritesScreen
     </screenName>
-    <screenName name="technology.mainthread.apps.isitup.ui.fragment.ResultFragment">
+    <screenName name="technology.mainthread.apps.isitup.view.fragment.ResultFragment">
         IsItUp ResultScreen
     </screenName>
-    <screenName name="technology.mainthread.apps.isitup.ui.activity.SettingsActivity">
+    <screenName name="technology.mainthread.apps.isitup.view.activity.SettingsActivity">
         IsItUp SettingsScreen
     </screenName>
 

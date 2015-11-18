@@ -19,8 +19,8 @@ import javax.inject.Inject;
 import io.fabric.sdk.android.Fabric;
 import technology.mainthread.apps.isitup.background.receiver.CheckerAlarmManager;
 import technology.mainthread.apps.isitup.data.CrashlyticsTree;
-import technology.mainthread.apps.isitup.data.StethoUtil;
-import technology.mainthread.apps.isitup.injector.component.AppComponent;
+import technology.mainthread.apps.isitup.util.StethoUtil;
+import technology.mainthread.apps.isitup.injection.component.AppComponent;
 import timber.log.Timber;
 
 public class IsItUpApp extends Application {

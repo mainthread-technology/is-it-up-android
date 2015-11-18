@@ -19,8 +19,8 @@ import technology.mainthread.apps.isitup.data.db.FavouritesTable;
 import technology.mainthread.apps.isitup.data.db.SyncFavourites;
 import technology.mainthread.apps.isitup.data.network.IsItUpRequest;
 import technology.mainthread.apps.isitup.data.pref.IsItUpPreferences;
-import technology.mainthread.apps.isitup.data.vo.IsItUpInfo;
-import technology.mainthread.apps.isitup.data.vo.enumeration.StatusCode;
+import technology.mainthread.apps.isitup.model.IsItUpInfo;
+import technology.mainthread.apps.isitup.model.StatusCode;
 import timber.log.Timber;
 
 public class CheckerIntentService extends IntentService {

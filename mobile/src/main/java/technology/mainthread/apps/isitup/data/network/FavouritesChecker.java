@@ -21,7 +21,7 @@ import technology.mainthread.apps.isitup.R;
 import technology.mainthread.apps.isitup.background.service.IsItUpDashClockService;
 import technology.mainthread.apps.isitup.data.db.FavouritesTable;
 import technology.mainthread.apps.isitup.data.db.SyncFavourites;
-import technology.mainthread.apps.isitup.data.vo.IsItUpInfo;
+import technology.mainthread.apps.isitup.model.IsItUpInfo;
 import timber.log.Timber;
 
 public class FavouritesChecker {

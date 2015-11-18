@@ -18,8 +18,8 @@ import technology.mainthread.apps.isitup.IsItUpApp;
 import technology.mainthread.apps.isitup.R;
 import technology.mainthread.apps.isitup.data.db.AsyncFavourites;
 import technology.mainthread.apps.isitup.data.db.FavouritesTable;
-import technology.mainthread.apps.isitup.data.vo.IsItUpInfo;
-import technology.mainthread.apps.isitup.data.vo.enumeration.StatusCode;
+import technology.mainthread.apps.isitup.model.IsItUpInfo;
+import technology.mainthread.apps.isitup.model.StatusCode;
 import timber.log.Timber;
 
 public class IsItUpDashClockService extends DashClockExtension {

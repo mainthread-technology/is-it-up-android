@@ -2,8 +2,8 @@ package technology.mainthread.apps.isitup.data.db;
 
 import java.util.List;
 
-import technology.mainthread.apps.isitup.data.vo.IsItUpInfo;
-import technology.mainthread.apps.isitup.data.vo.enumeration.StatusCode;
+import technology.mainthread.apps.isitup.model.IsItUpInfo;
+import technology.mainthread.apps.isitup.model.StatusCode;
 
 public interface FavouritesTable {
 

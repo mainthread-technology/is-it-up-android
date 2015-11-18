@@ -20,7 +20,7 @@
 # Application classes that will be serialized/deserialized over Gson
 -keep interface technology.mainthread.apps.isitup.data.network.IsItUpRequest { *; }
 -keep class technology.mainthread.apps.isitup.data.network.IsItUpRequest { *; }
--keep class technology.mainthread.apps.isitup.data.vo.IsItUpInfo { *; }
+-keep class technology.mainthread.apps.isitup.model.IsItUpInfo { *; }
 
 -keep class com.google.android.apps.dashclock.** {*;}
 
