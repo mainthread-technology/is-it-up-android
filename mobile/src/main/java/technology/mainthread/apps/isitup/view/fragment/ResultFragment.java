@@ -219,7 +219,7 @@ public class ResultFragment extends BaseFragment implements SwipeRefreshLayout.O
     private void setData() {
         if (isItUpInfo != null) {
             domainText.setText(isItUpInfo.getDomain());
-            statusText.setText(getStatusText(StatusCode.fromCode(isItUpInfo.getStatusCodeInteger())));
+            statusText.setText(getStatusText(isItUpInfo.getStatusCode()));
             ipAddressText.setText(isItUpInfo.getResponseIp());
             if (isItUpInfo.getLastChecked() != 0) {
                 // if we are offline show the last checked time
@@ -281,16 +281,16 @@ public class ResultFragment extends BaseFragment implements SwipeRefreshLayout.O
         }
     }
 
-    private int getStatusText(StatusCode statusCode) {
+    private int getStatusText(@StatusCode int statusCode) {
         int resId;
         switch (statusCode) {
-            case UP:
+            case StatusCode.UP:
                 resId = R.string.status_up;
                 break;
-            case DOWN:
+            case StatusCode.DOWN:
                 resId = R.string.status_down;
                 break;
-            case INVALID_DOMAIN:
+            case StatusCode.INVALID_DOMAIN:
                 resId = R.string.status_invalid_domain;
                 break;
             default:
@@ -304,11 +304,11 @@ public class ResultFragment extends BaseFragment implements SwipeRefreshLayout.O
     private String getShareMessage(IsItUpInfo response) {
         String message = getString(R.string.share_message_default);
         if (response != null) {
-            switch (StatusCode.fromCode(response.getStatusCodeInteger())) {
-                case UP:
+            switch (response.getStatusCode()) {
+                case StatusCode.UP:
                     message = getString(R.string.share_message_up, response.getDomain());
                     break;
-                case DOWN:
+                case StatusCode.DOWN:
                     message = getString(R.string.share_message_down, response.getDomain());
                     break;
                 default:

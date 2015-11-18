@@ -8,7 +8,7 @@ public class IsItUpInfo {
     private String domain;
     private int port;
     @SerializedName("status_code")
-    private int statusCode;
+    private @StatusCode int statusCode;
     @SerializedName("response_ip")
     private String responseIp;
     @SerializedName("response_code")
@@ -29,12 +29,8 @@ public class IsItUpInfo {
         return port;
     }
 
-    public int getStatusCodeInteger() {
+    public @StatusCode int getStatusCode() {
         return statusCode;
-    }
-
-    public StatusCode getStatusCode() {
-        return StatusCode.fromCode(statusCode);
     }
 
     public String getResponseIp() {

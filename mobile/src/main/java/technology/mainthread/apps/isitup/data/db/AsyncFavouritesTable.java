@@ -47,7 +47,7 @@ public class AsyncFavouritesTable implements FavouritesTable {
     }
 
     @Override
-    public List<IsItUpInfo> getAllForStatusCode(StatusCode code) {
+    public List<IsItUpInfo> getAllForStatusCode(@StatusCode int code) {
         return syncFavouritesTable.getAllForStatusCode(code);
     }
 

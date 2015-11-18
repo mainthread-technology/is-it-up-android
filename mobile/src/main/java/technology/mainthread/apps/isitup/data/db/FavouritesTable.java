@@ -17,7 +17,7 @@ public interface FavouritesTable {
 
     List<IsItUpInfo> getAllFavourites();
 
-    List<IsItUpInfo> getAllForStatusCode(StatusCode code);
+    List<IsItUpInfo> getAllForStatusCode(@StatusCode int code);
 
     void update(int id, IsItUpInfo info);
 

@@ -74,7 +74,7 @@ public class SyncFavouritesTable implements FavouritesTable {
         ContentValues values = new ContentValues();
         values.put(COLUMN_DOMAIN, response.getDomain());
         values.put(COLUMN_PORT, response.getPort());
-        values.put(COLUMN_STATUS_CODE, response.getStatusCodeInteger());
+        values.put(COLUMN_STATUS_CODE, response.getStatusCode());
         values.put(COLUMN_RESPONSE_IP, response.getResponseIp());
         values.put(COLUMN_RESPONSE_CODE, response.getResponseCode());
         values.put(COLUMN_RESPONSE_TIME, response.getResponseTime());
@@ -133,9 +133,9 @@ public class SyncFavouritesTable implements FavouritesTable {
     }
 
     @Override
-    public List<IsItUpInfo> getAllForStatusCode(StatusCode code) {
+    public List<IsItUpInfo> getAllForStatusCode(@StatusCode int code) {
         List<IsItUpInfo> responseList = new ArrayList<>();
-        Cursor cursor = get(COLUMN_STATUS_CODE + "=?", new String[]{String.valueOf(code.ordinal() + 1)});
+        Cursor cursor = get(COLUMN_STATUS_CODE + "=?", new String[]{String.valueOf(code)});
 
         if (cursor.moveToFirst()) {
             do {
@@ -153,7 +153,7 @@ public class SyncFavouritesTable implements FavouritesTable {
         ContentValues values = new ContentValues();
         values.put(COLUMN_DOMAIN, info.getDomain());
         values.put(COLUMN_PORT, info.getPort());
-        values.put(COLUMN_STATUS_CODE, info.getStatusCodeInteger());
+        values.put(COLUMN_STATUS_CODE, info.getStatusCode());
         values.put(COLUMN_RESPONSE_IP, info.getResponseIp());
         values.put(COLUMN_RESPONSE_CODE, info.getResponseCode());
         values.put(COLUMN_RESPONSE_TIME, info.getResponseTime());
@@ -169,7 +169,7 @@ public class SyncFavouritesTable implements FavouritesTable {
         ContentValues values = new ContentValues();
         values.put(COLUMN_DOMAIN, info.getDomain());
         values.put(COLUMN_PORT, info.getPort());
-        values.put(COLUMN_STATUS_CODE, info.getStatusCodeInteger());
+        values.put(COLUMN_STATUS_CODE, info.getStatusCode());
         values.put(COLUMN_RESPONSE_IP, info.getResponseIp());
         values.put(COLUMN_RESPONSE_CODE, info.getResponseCode());
         values.put(COLUMN_RESPONSE_TIME, info.getResponseTime());
