@@ -1,5 +1,4 @@
-#Is It Up for Android
-[![Circle CI](https://circleci.com/gh/mainthread-technology/is-it-up-android.svg?style=svg)](https://circleci.com/gh/mainthread-technology/is-it-up-android)
+# Is It Up for Android (Deprecated)
 
 ## Features
 - Manually check site
@@ -7,9 +6,6 @@
 - Schedule regular checks
 - Dashclock extension
 - notification when site is down
-
-## Beta testers
-[Join](https://play.google.com/apps/testing/technology.mainthread.apps.isitup) the open beta to be the first to see updates.
 
 License
 -------
